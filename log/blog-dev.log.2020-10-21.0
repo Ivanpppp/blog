@@ -1,0 +1,97 @@
+2020-10-21 07:48:31.116  WARN 7285 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8h9m51s387ms).
+2020-10-21 07:58:47.778  WARN 7285 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m46s611ms).
+2020-10-21 08:19:16.839  WARN 7285 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20m29s63ms).
+2020-10-21 08:35:09.984  WARN 7285 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m23s137ms).
+2020-10-21 08:47:40.051  WARN 7285 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m62ms).
+2020-10-21 08:57:57.197  WARN 7285 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m47s134ms).
+2020-10-21 09:08:14.355  WARN 7285 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m47s153ms).
+2020-10-21 10:38:19.464  WARN 7285 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h30m5s109ms).
+2020-10-21 10:47:26.097  WARN 7285 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m36s622ms).
+2020-10-21 10:57:42.129  WARN 7285 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m46s16ms).
+2020-10-21 11:07:59.284  WARN 7285 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m47s150ms).
+2020-10-21 11:18:16.462  WARN 7285 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m47s164ms).
+2020-10-21 11:25:03.582  WARN 7285 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m47s120ms).
+2020-10-21 11:27:54.634  WARN 7285 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m21s39ms).
+2020-10-21 12:18:02.642  WARN 7285 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49m37s996ms).
+2020-10-21 12:40:59.440  INFO 7285 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-21 12:40:59.467  INFO 7285 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-21 12:40:59.482  INFO 7285 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-10-21 12:40:59.497  INFO 7285 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-10-21 15:33:46.449  INFO 13052 --- [restartedMain] com.ivan.blog.BlogApplication            : Starting BlogApplication on malianzhengdeMacBook-Pro.local with PID 13052 (/Users/ivan145/IdeaProjects/blog/target/classes started by ivan145 in /Users/ivan145/IdeaProjects/blog)
+2020-10-21 15:33:46.453  INFO 13052 --- [restartedMain] com.ivan.blog.BlogApplication            : The following profiles are active: dev
+2020-10-21 15:33:46.556  INFO 13052 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-10-21 15:33:46.557  INFO 13052 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-10-21 15:33:47.619  INFO 13052 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-10-21 15:33:47.653  INFO 13052 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 JPA repository interfaces.
+2020-10-21 15:33:48.774  INFO 13052 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-10-21 15:33:48.787  INFO 13052 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-21 15:33:48.788  INFO 13052 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-21 15:33:48.891  INFO 13052 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-21 15:33:48.891  INFO 13052 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2334 ms
+2020-10-21 15:33:49.168  INFO 13052 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-21 15:33:49.238  INFO 13052 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-10-21 15:33:49.387  INFO 13052 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2020-10-21 15:33:49.404  WARN 13052 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-21 15:33:49.576  INFO 13052 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-10-21 15:33:49.707  INFO 13052 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-21 15:33:49.710  WARN 13052 --- [task-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-10-21 15:33:49.801  INFO 13052 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-10-21 15:33:50.284  INFO 13052 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-21 15:33:50.289  INFO 13052 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-21 15:33:50.316  INFO 13052 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-10-21 15:33:50.349  INFO 13052 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-21 15:33:50.352  INFO 13052 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-10-21 15:33:50.352  INFO 13052 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-10-21 15:33:50.377  INFO 13052 --- [restartedMain] com.ivan.blog.BlogApplication            : Started BlogApplication in 4.881 seconds (JVM running for 6.521)
+2020-10-21 15:33:50.698  INFO 13052 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-10-21 15:33:50.708  INFO 13052 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-21 15:33:58.953  INFO 13052 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-21 15:33:58.954  INFO 13052 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-21 15:33:58.969  INFO 13052 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-10-21 15:33:59.105  INFO 13052 --- [http-nio-8080-exec-1] com.ivan.blog.aspect.LogAspect           : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.ivan.blog.web.indexController.index', args=[]}
+2020-10-21 15:33:59.106  INFO 13052 --- [http-nio-8080-exec-1] com.ivan.blog.aspect.LogAspect           : ------------doBefore-------------
+2020-10-21 15:33:59.112  INFO 13052 --- [http-nio-8080-exec-1] com.ivan.blog.aspect.LogAspect           : Return : {} index
+2020-10-21 15:33:59.112  INFO 13052 --- [http-nio-8080-exec-1] com.ivan.blog.aspect.LogAspect           : ------------afterDo-------------
+2020-10-21 15:34:13.337  INFO 13052 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-21 15:34:13.343  INFO 13052 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-21 15:34:13.349  INFO 13052 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-10-21 15:34:13.382  INFO 13052 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-10-21 15:35:08.815  INFO 13090 --- [restartedMain] com.ivan.blog.BlogApplication            : Starting BlogApplication on malianzhengdeMacBook-Pro.local with PID 13090 (/Users/ivan145/IdeaProjects/blog/target/classes started by ivan145 in /Users/ivan145/IdeaProjects/blog)
+2020-10-21 15:35:08.818  INFO 13090 --- [restartedMain] com.ivan.blog.BlogApplication            : The following profiles are active: dev
+2020-10-21 15:35:08.890  INFO 13090 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-10-21 15:35:08.890  INFO 13090 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-10-21 15:35:10.435  INFO 13090 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-10-21 15:35:10.464  INFO 13090 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 JPA repository interfaces.
+2020-10-21 15:35:12.410  INFO 13090 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-10-21 15:35:12.425  INFO 13090 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-21 15:35:12.426  INFO 13090 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-21 15:35:12.545  INFO 13090 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-21 15:35:12.545  INFO 13090 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3654 ms
+2020-10-21 15:35:12.896  INFO 13090 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-21 15:35:12.974  INFO 13090 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-10-21 15:35:13.162  INFO 13090 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2020-10-21 15:35:13.221  WARN 13090 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-21 15:35:13.403  INFO 13090 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-10-21 15:35:13.580  INFO 13090 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-21 15:35:13.603  WARN 13090 --- [task-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-10-21 15:35:14.316  INFO 13090 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-10-21 15:35:14.624  INFO 13090 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-21 15:35:14.652  INFO 13090 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-10-21 15:35:14.863  INFO 13090 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-21 15:35:14.936  INFO 13090 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-21 15:35:14.938  INFO 13090 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-10-21 15:35:14.939  INFO 13090 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-10-21 15:35:14.954  INFO 13090 --- [restartedMain] com.ivan.blog.BlogApplication            : Started BlogApplication in 6.643 seconds (JVM running for 8.086)
+2020-10-21 15:35:14.971  INFO 13090 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-10-21 15:35:14.980  INFO 13090 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-21 15:35:15.252  INFO 13090 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-21 15:35:15.252  INFO 13090 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-21 15:35:15.269  INFO 13090 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2020-10-21 15:35:15.389  INFO 13090 --- [http-nio-8080-exec-1] com.ivan.blog.aspect.LogAspect           : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.ivan.blog.web.indexController.index', args=[]}
+2020-10-21 15:35:15.390  INFO 13090 --- [http-nio-8080-exec-1] com.ivan.blog.aspect.LogAspect           : ------------doBefore-------------
+2020-10-21 15:35:15.394  INFO 13090 --- [http-nio-8080-exec-1] com.ivan.blog.aspect.LogAspect           : Return : {} index
+2020-10-21 15:35:15.394  INFO 13090 --- [http-nio-8080-exec-1] com.ivan.blog.aspect.LogAspect           : ------------afterDo-------------
+2020-10-21 15:38:25.197  INFO 13090 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-21 15:38:25.200  INFO 13090 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-21 15:38:25.203  INFO 13090 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-10-21 15:38:25.213  INFO 13090 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
