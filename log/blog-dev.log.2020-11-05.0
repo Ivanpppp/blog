@@ -1,0 +1,46 @@
+2020-11-05 14:58:42.985  INFO 94857 --- [restartedMain] com.ivan.blog.BlogApplication            : Starting BlogApplication on malianzhengdeMacBook-Pro.local with PID 94857 (/Users/ivan145/IdeaProjects/blog/target/classes started by ivan145 in /Users/ivan145/IdeaProjects/blog)
+2020-11-05 14:58:42.997  INFO 94857 --- [restartedMain] com.ivan.blog.BlogApplication            : The following profiles are active: dev
+2020-11-05 14:58:43.115  INFO 94857 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-05 14:58:43.115  INFO 94857 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-05 14:58:44.282  INFO 94857 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-05 14:58:44.395  INFO 94857 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99ms. Found 4 JPA repository interfaces.
+2020-11-05 14:58:45.646  INFO 94857 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-05 14:58:45.659  INFO 94857 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-05 14:58:45.660  INFO 94857 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-05 14:58:46.040  INFO 94857 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-05 14:58:46.040  INFO 94857 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2924 ms
+2020-11-05 14:58:46.747  INFO 94857 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-05 14:58:46.877  INFO 94857 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-05 14:58:46.993  INFO 94857 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2020-11-05 14:58:47.695  INFO 94857 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-05 14:58:47.777  WARN 94857 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-05 14:58:48.339  INFO 94857 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-05 14:58:48.342  WARN 94857 --- [task-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-11-05 14:58:50.048  INFO 94857 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-11-05 14:58:50.518  INFO 94857 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-05 14:58:50.550  INFO 94857 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-11-05 14:58:51.163  INFO 94857 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-05 14:58:51.299  INFO 94857 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-05 14:58:51.304  INFO 94857 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-05 14:58:52.295  INFO 94857 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-05 14:58:52.304  INFO 94857 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-05 14:58:53.250  INFO 94857 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-05 14:58:53.263  INFO 94857 --- [restartedMain] com.ivan.blog.BlogApplication            : Started BlogApplication in 11.502 seconds (JVM running for 13.01)
+2020-11-05 14:58:58.882  INFO 94857 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-05 14:58:58.882  INFO 94857 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-05 14:58:58.896  INFO 94857 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-11-05 14:58:58.926  INFO 94857 --- [http-nio-8080-exec-1] com.ivan.blog.aspect.LogAspect           : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.ivan.blog.web.indexController.index', args=[]}
+2020-11-05 14:58:58.926  INFO 94857 --- [http-nio-8080-exec-1] com.ivan.blog.aspect.LogAspect           : ------------doBefore-------------
+2020-11-05 14:58:58.932  INFO 94857 --- [http-nio-8080-exec-1] com.ivan.blog.aspect.LogAspect           : Return : {} index
+2020-11-05 14:58:58.932  INFO 94857 --- [http-nio-8080-exec-1] com.ivan.blog.aspect.LogAspect           : ------------afterDo-------------
+2020-11-05 14:59:22.657  WARN 94857 --- [http-nio-8080-exec-7] o.springframework.validation.DataBinder  : Skipping URI variable 'id' because request contains bind value with same name.
+2020-11-05 14:59:26.004  WARN 94857 --- [http-nio-8080-exec-6] o.springframework.validation.DataBinder  : Skipping URI variable 'id' because request contains bind value with same name.
+2020-11-05 14:59:35.350  WARN 94857 --- [http-nio-8080-exec-1] o.springframework.validation.DataBinder  : Skipping URI variable 'id' because request contains bind value with same name.
+2020-11-05 16:07:08.075  WARN 94857 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m46s977ms).
+2020-11-05 16:27:37.148  WARN 94857 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20m29s82ms).
+2020-11-05 16:48:35.294  WARN 94857 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20m28s139ms).
+2020-11-05 17:09:04.395  WARN 94857 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20m29s101ms).
+2020-11-05 17:15:35.492  WARN 94857 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m1s90ms).
+2020-11-05 17:36:05.069  WARN 94857 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20m29s577ms).
+2020-11-05 17:57:04.046  WARN 94857 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20m28s974ms).
+2020-11-05 19:08:00.078  WARN 94857 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h10m25s991ms).
