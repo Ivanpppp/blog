@@ -3,14 +3,21 @@ package com.ivan.blog.service;
 import com.ivan.blog.NotFoundException;
 import com.ivan.blog.dao.BlogRepository;
 import com.ivan.blog.po.Blog;
+import com.ivan.blog.po.Type;
 import com.ivan.blog.vo.BlogQuery;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Predicate;
+import javax.persistence.criteria.Root;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -40,7 +47,7 @@ public class BlogServiceImpl implements BlogService{
         if (blog1 == null){
             throw new NotFoundException("未找到该博客");
         }
-        BeanUtils.copyProperties(blog,blog1);
+        BeanUtils.copyProperties(blog1,blog);
         return blogRepository.save(blog1);
     }
 
@@ -56,8 +63,34 @@ public class BlogServiceImpl implements BlogService{
     }
 
     @Override
-    public Page<Blog> listBlog(Pageable pageable, BlogQuery blog) {
-        return null;
+    public Page<Blog> listBlog(Pageable pageable, Blog blog) {
+        return blogRepository.findAll(new Specification<Blog>() {
+            /**
+             *
+             * @param root  代表需要查询的对象
+             * @param criteriaQuery     查询的条件容器
+             * @param criteriaBuilder   设置具体条件的表达式
+             * @return
+             */
+            @Override
+            public Predicate toPredicate(Root<Blog> root, CriteriaQuery<?> criteriaQuery, CriteriaBuilder criteriaBuilder) {
+                List<Predicate> predicates = new ArrayList<>();
+                // 标题的判断
+                if (!"".equals(blog.getTitle()) && blog.getTitle() != null){
+                    predicates.add(criteriaBuilder.like(root.<String>get("title"),"%"+blog.getTitle()+"%"));
+                }
+                // 分类判断
+                if (blog.getType().getId() != null){
+                    predicates.add(criteriaBuilder.equal(root.<Type>get("type").get("id"),blog.getType().getId()));
+                }
+                // 是否推荐
+                if (blog.isRecommend()) {
+                    predicates.add(criteriaBuilder.equal(root.<Boolean>get("recommend"),blog.isRecommend()));
+                }
+                criteriaQuery.where(predicates.toArray(new Predicate[predicates.size()]));
+                return null;
+            }
+        },pageable);
     }
 
     @Override

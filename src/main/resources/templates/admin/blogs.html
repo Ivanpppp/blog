@@ -48,6 +48,7 @@
 <div  class="m-container-small m-padded-tb-big">
   <div class="ui container">
     <form action="#" method="post" class="ui secondary segment form">
+      <input type="hidden" name="page" >
       <div class="inline fields">
         <div class="field">
           <input type="text" name="title" placeholder="标题">
@@ -87,24 +88,24 @@
       </tr>
       </thead>
       <tbody>
-      <tr>
-        <td>1</td>
-        <td>刻意练习清单</td>
-        <td>认知升级</td>
-        <td>是</td>
-        <td>2017-10-02 09:45</td>
+      <tr th:each="blog.iterStat : ${page.content}">
+        <td th:text="${iterStat.count}">1</td>
+        <td th:text="${blog.title}">刻意练习清单</td>
+        <td th:text="${blog.type.name}">认知升级</td>
+        <td th:text="${blog.recommend} ? '是' :'否'">是</td>
+        <td th:text="${blog.updateTime}">2017-10-02 09:45</td>
         <td>
-          <a href="#" class="ui mini teal basic button">编辑</a>
-          <a href="#" class="ui mini red basic button">删除</a>
+          <a href="#" th:href="@{/admin/blogs/{id}/input(id=${blog.id})}" class="ui mini teal basic button">编辑</a>
+          <a href="#" th:href="@{/admin/blogs/{id}/delete(id=${blog.id})}" class="ui mini red basic button">删除</a>
         </td>
       </tr>
       </tbody>
       <tfoot>
       <tr>
         <th colspan="6">
-          <div class="ui mini pagination menu">
-            <a class=" item">上一页</a>
-            <a class=" item">下一页</a>
+          <div class="ui mini pagination menu" th:if="${page.totalPages}>1">
+            <a onclick="page(this)" th:attr="data-page=${page.number}-1" class="  item" th:unless="${page.first}">上一页</a>
+            <a onclick="page(this)" th:attr="data-page=${page.number}+1" class=" item" th:unless="${page.last}">下一页</a>
           </div>
           <a href="#" class="ui mini right floated teal basic button">新增</a>
         </th>
@@ -163,6 +164,11 @@
     $('.ui.dropdown').dropdown({
       on : 'hover'
     });
+
+    function page(obj){
+      $("[name='page']").val($(obj).data("page"));
+      
+    }
 
   </script>
 </body>
