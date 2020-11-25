@@ -23,6 +23,18 @@ public class Blog {
     private boolean commentabled;
     private boolean published;
     private boolean recommend;
+
+    public String getTagIds() {
+        return tagIds;
+    }
+
+    public void setTagIds(String tagIds) {
+        this.tagIds = tagIds;
+    }
+
+    @Transient
+    private String tagIds;
+
     @Temporal(TemporalType.TIMESTAMP)
     private Date createTime;
     @Temporal(TemporalType.TIMESTAMP)
