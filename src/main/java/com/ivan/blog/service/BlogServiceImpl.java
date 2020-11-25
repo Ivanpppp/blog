@@ -63,7 +63,7 @@ public class BlogServiceImpl implements BlogService{
     }
 
     @Override
-    public Page<Blog> listBlog(Pageable pageable, Blog blog) {
+    public Page<Blog> listBlog(Pageable pageable, BlogQuery blog) {
         return blogRepository.findAll(new Specification<Blog>() {
             /**
              *
@@ -80,8 +80,8 @@ public class BlogServiceImpl implements BlogService{
                     predicates.add(criteriaBuilder.like(root.<String>get("title"),"%"+blog.getTitle()+"%"));
                 }
                 // 分类判断
-                if (blog.getType().getId() != null){
-                    predicates.add(criteriaBuilder.equal(root.<Type>get("type").get("id"),blog.getType().getId()));
+                if (blog.getTypeId() != null){
+                    predicates.add(criteriaBuilder.equal(root.<Type>get("type").get("id"),blog.getTypeId()));
                 }
                 // 是否推荐
                 if (blog.isRecommend()) {
