@@ -23,6 +23,15 @@ public class Blog {
     private boolean commentabled;
     private boolean published;
     private boolean recommend;
+    private String description;
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
     public String getTagIds() {
         return tagIds;
@@ -190,6 +199,29 @@ public class Blog {
         this.updateTime = updateTime;
     }
 
+    public void init(){
+        this.tagIds = tagsToIds(this.getTags());
+    }
+
+    public String tagsToIds(List<Tag> tags){
+        if (!tags.isEmpty()){
+            StringBuffer ids = new StringBuffer();
+            boolean flag = false;
+            for (Tag t :
+                    tags) {
+                if (flag){
+                    ids.append(",");
+                }else {
+                    flag = true;
+                }
+                ids.append(t.getId());
+            }
+            return ids.toString();
+        }else {
+            return tagIds;
+        }
+    }
+
     // Constructor
 
     public Blog() {
@@ -211,8 +243,14 @@ public class Blog {
                 ", commentabled=" + commentabled +
                 ", published=" + published +
                 ", recommend=" + recommend +
+                ", description='" + description + '\'' +
+                ", tagIds='" + tagIds + '\'' +
                 ", createTime=" + createTime +
                 ", updateTime=" + updateTime +
+                ", type=" + type +
+                ", tags=" + tags +
+                ", user=" + user +
+                ", comments=" + comments +
                 '}';
     }
 }

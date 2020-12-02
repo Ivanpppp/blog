@@ -4,6 +4,7 @@ import com.ivan.blog.NotFoundException;
 import com.ivan.blog.dao.BlogRepository;
 import com.ivan.blog.po.Blog;
 import com.ivan.blog.po.Type;
+import com.ivan.blog.utils.MyBeanUtils;
 import com.ivan.blog.vo.BlogQuery;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,9 +39,13 @@ public class BlogServiceImpl implements BlogService{
     @Transactional
     @Override
     public Blog saveBlog(Blog blog) {
-        blog.setCreateTime(new Date());
-        blog.setUpdateTime(new Date());
-        blog.setViews(0);
+        if (blog.getId() == null){
+            blog.setCreateTime(new Date());
+            blog.setUpdateTime(new Date());
+            blog.setViews(0);
+        }else {
+            blog.setUpdateTime(new Date());
+        }
         return blogRepository.save(blog);
     }
 
@@ -51,7 +56,8 @@ public class BlogServiceImpl implements BlogService{
         if (blog1 == null){
             throw new NotFoundException("未找到该博客");
         }
-        BeanUtils.copyProperties(blog1,blog);
+        BeanUtils.copyProperties(blog,blog1, MyBeanUtils.getNullPropertyNames(blog));
+        blog1.setUpdateTime(new Date());
         return blogRepository.save(blog1);
     }
 
