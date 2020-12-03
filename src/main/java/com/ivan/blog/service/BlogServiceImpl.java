@@ -4,6 +4,7 @@ import com.ivan.blog.NotFoundException;
 import com.ivan.blog.dao.BlogRepository;
 import com.ivan.blog.po.Blog;
 import com.ivan.blog.po.Type;
+import com.ivan.blog.utils.MarkdownUtils;
 import com.ivan.blog.utils.MyBeanUtils;
 import com.ivan.blog.vo.BlogQuery;
 import org.springframework.beans.BeanUtils;
@@ -69,9 +70,19 @@ public class BlogServiceImpl implements BlogService{
         blogRepository.deleteById(id);
     }
 
+    @Transactional
     @Override
     public Blog getAndConvert(Long id) {
-        return null;
+        Blog blog = blogRepository.getOne(id);
+        if (blog == null) {
+            throw new NotFoundException("该博客不存在");
+        }
+        Blog b = new Blog();
+        BeanUtils.copyProperties(blog,b);
+        String content = b.getContent();
+        b.setContent(MarkdownUtils.markdownToHtmlExtensions(content));
+
+        return b;
     }
 
     @Override
@@ -117,7 +128,8 @@ public class BlogServiceImpl implements BlogService{
 
     @Override
     public Page<Blog> listBlog(String query, Pageable pageable) {
-        return null;
+
+        return blogRepository.findByQuery(query,pageable) ;
     }
 
     @Override
